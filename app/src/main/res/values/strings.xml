@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Welcom</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <string name="nav_item_home">Home</string>
+    <string name="nav_item_friends">Friends</string>
+    <string name="nav_item_notifications">Test App</string>
+
+    <!-- navigation drawer item labels  -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+    </string-array>
+
+
+    <string name="title_world">World</string>
+    <string name="title_home">New Feeds</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!---->
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="logo_desc">App logo</string>
+    <string name="amino_title">Glycine</string>
+    <string name="amino_content">Click on the Navigation Drawer icon on the top left to selection a menu Click on the Navigation Drawer icon on the top left to selection a menu  Click on the Navigation Drawer icon on the top left to selection a menu </string>
+
+
+
+    <string-array name="countries_list">
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Australia</item>
+        <item>Bangladesh</item>
+        <item>Bhutan</item>
+        <item>England</item>
+        <item>Finland</item>
+        <item>India</item>
+        <item>Saudi Arabia</item>
+        <item>Nepal</item>
+    </string-array>
+
+
+
+</resources>
