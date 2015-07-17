@@ -1,5 +1,6 @@
 package com.sabayrean.welcom.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -16,6 +17,8 @@ import com.sabayrean.welcom.R;
 import com.sabayrean.welcom.find.FindFriends;
 import com.sabayrean.welcom.profile.UserProfile;
 import com.sabayrean.welcom.tab.MainTab;
+import com.sabayrean.welcom.world.NewPost;
+import com.sabayrean.welcom.world.Test;
 
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener{
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         return true;
     }
 
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -63,10 +67,16 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if(id == R.id.refresh){
+            Intent intent = new Intent(MainActivity.this, Test.class);
+            startActivity(intent);
+            return  true;
+        }else if (id == R.id.add_post) {
+
+            Intent intent = new Intent(MainActivity.this, NewPost.class);
+            startActivity(intent);
             return true;
-        }
-        if(id == R.id.action_search){
+        }else if(id == R.id.action_search){
             Toast.makeText(getApplicationContext(), "Search action is selected!", Toast.LENGTH_SHORT).show();
             return true;
         }

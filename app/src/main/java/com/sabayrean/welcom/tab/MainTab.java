@@ -49,7 +49,7 @@ public class MainTab extends Fragment {
         Resources res = getResources();
         mSlidingTabLayout.setSelectedIndicatorColors(res.getColor(R.color.colorPrimaryDark));
         mSlidingTabLayout.setDistributeEvenly(true);
-        mViewPager.setAdapter(new MainTabs(getFragmentManager()));
+        mViewPager.setAdapter(new MainTabs(getChildFragmentManager()));
 
         mSlidingTabLayout.setViewPager(mViewPager);
 
@@ -86,7 +86,6 @@ public class MainTab extends Fragment {
     class MainTabs extends FragmentPagerAdapter {
 
         SparseArray<View> views = new SparseArray<View>();
-        SparseArray<Fragment> registeredFragments = new SparseArray<Fragment>();
         public MainTabs(FragmentManager fm) {
             super(fm);
         }

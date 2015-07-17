@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Post status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/inputStatus"
+        android:minLines="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.sabayrean.welcom.image.DynamicImageView
+        android:id="@+id/imgView"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+    </com.sabayrean.welcom.image.DynamicImageView>
+    <TextView
+        android:textSize="15dp"
+        android:id="@+id/city"
+        android:text="city"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Country"
+        android:id="@+id/country"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.sabayrean.welcom.image.DynamicImageView
+        android:id="@+id/refresh"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/refresh"
+        android:scaleType="centerCrop">
+    </com.sabayrean.welcom.image.DynamicImageView>
+    <CheckBox
+        android:id="@+id/saveLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Save Location"/>
+    <Button
+        android:id="@+id/btnAddImage"
+        android:background="@drawable/plus"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <Button
+        android:text="Post"
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
