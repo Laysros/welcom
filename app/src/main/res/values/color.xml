@@ -24,8 +24,8 @@
     <color name="ColorPrimaryDark">#c31c13</color>
     <color name="tabsScrollColor">#8a140e</color>
 
-
-    <color name="feed_bg">#d3d6db</color>
+    <color name="gray">#d3d6db</color>
+    <color name="feed_bg">#ffaabb</color>
     <color name="feed_item_bg">#ffffff</color>
     <color name="feed_item_border">#c2c3c8</color>
     <color name="link">#0a80d1</color>
